@@ -27,7 +27,7 @@ function ModalEditBerita (id,nama) {
     $('[name="kd_berita"]').val(id);
     $('[name="nama_berita"]').val(nama);
     $('#searchModal').on('shown.bs.modal', function () {
-            $('#nama_berita').focus();
+         $(this).find('[autofocus]').focus();
         });
 
  
